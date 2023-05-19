@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style-slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <!-- style -->
+    <link rel="stylesheet" href="style/css/main.css">
+    <title>Test Task</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header >
+        <div class="header container">
+            <div class="header__nav">
+                <!-- header-logo -->
+                <div class="header__nav-logo">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <!-- hedaer-logo-end-->
+
+                <!-- header-navigation -->
+                <nav class="header__nav-nav">
+                    <button><a href="#">About Us</a></button>
+                    <button><a href="#">Article</a></button>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Property</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">House</a>
+                          <a href="#">Vella</a>
+                          <a href="#">Apartment</a>
+                        </div>
+                    </div>
+                    <!-- Dropdown-end -->
+                    <button><a href="#">Sign Up!</a></button>
+                </nav>
+                
+                <!-- burger-menu -->
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <!-- header-navigation-end -->
+            </div>
+            
+            <div class="header__content">
+                <div class="header__content-title">
+                    <h1>find the place <br>to live <span>Your Dreams</span> <br> easily here</h1>
+                    <p style="padding-bottom: 24px;">Everything you need about finding your place to live will be here, where it will be easier for you</p>
+                    <div class="search">
+                        <form action="">
+                        <img src="img/Header/vectorImput.svg" alt="">
+                          <input type="search" placeholder="Search for the location you want!" name="search" required>
+                          <button type="submit">Search <img src="img/Header/vectorArrow.svg" alt=""></button>
+                        </form>
+                    </div>
+                    <p>Our Partnership </p>
+                    <div class="title__partnership">
+                        <img src="img/Header/traveloka.svg" alt="">
+                        <img src="img/Header/tiket.svg" alt="">
+                        <img src="img/Header/airbnb.svg" alt="">
+                        <img src="img/Header/trip.svg" alt="">
+                    </div>
+                </div>
+                
+                <div class="header__content-slider">
+                    <div class="slider">
+                        <div class="slider__slide">
+                            <div class="slider__slide-content">
+                                <img src="img/Header/photoSliderOne.png" alt="">
+                                <div class="content__inf">
+                                    <h2>Manhattan Style</h2>
+                                    <p>Lorem ipsum dolor sit amet, conser adipiscing elit</p>
+                                    <div class="stars">
+                                        <div class="star">
+                                            <img src="img/Header/vectorStar.png" alt="">
+                                        </div>
+                                        <p>4.8 (400+ Review)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__slide">
+                            <div class="slider__slide-content">
+                                <img src="img/Header/photoSliderTwo.png" alt="">
+                                <div class="content__inf">
+                                    <h2>Manhattan Style</h2>
+                                    <p>Lorem ipsum dolor sit amet, conser adipiscing elit</p>
+                                    <div class="stars">
+                                        <div class="star">
+                                            <img src="img/Header/vectorStar.png" alt="">
+                                        </div>
+                                        <p>4.8 (400+ Review)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slider__slide">
+                            <div class="slider__slide-content">
+                                <img src="img/Header/photoSliderOne.png" alt="">
+                                <div class="content__inf">
+                                    <h2>Manhattan Style</h2>
+                                    <p>Lorem ipsum dolor sit amet, conser adipiscing elit</p>
+                                    <div class="stars">
+                                        <div class="star">
+                                            <img src="img/Header/vectorStar.png" alt="">
+                                        </div>
+                                        <p>4.8 (400+ Review)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+    
+    <!-- section-two-recommendaion test-->
+    <section class="recommendaion">
+        <div class="container">
+            <div class="recommendaion__title">
+                <p><span></span>Our Recommendation</p>
+            </div>
+
+            <nav class="recommendaion__nav">
+                <div class="recommendaion__nav-title">
+                    <h2>Featured House</h2>
+                </div>
+                    
+                <nav class="nav__slider">
+                    <div class="recommendaion__nav-btn">
+                        <button class="btn active" id="btn-house">
+                            <div class="btn__img-house">
+                                
+                            </div>
+                            <p>House</p>
+                        </button>
+                        <button class="btn" id="btn-villa">
+                            <div class="btn__img-villa">
+    
+                            </div>
+                            <p>Villa</p>
+                        </button>
+                        <button class="btn" id="btn-apartman">
+                            <div class="btn__img-apartman">
+                                
+                            </div>
+                            <p>Apartment</p>
+                        </button>
+                    </div>
+    
+                    <div class="recommendaion__nav-arrows">
+                        <button class="prev-arrow">
+                            
+                        </button>
+                        <button class="next-arrow">
+                        </button>
+                    </div>
+                </nav>
+            </nav>
+
+            <div class="recommendaion__content">
+                <div class="recommendation__content-house house" id="house">
+                        <!-- slide-1 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2> House1</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-2 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House2</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user2.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-3 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House3</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user3.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-4 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House4</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-5 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House5</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-6 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseOne.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House6</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                      
+                <div class="recommendation__content-villa villa" id="villa">
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House1</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House2</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House3</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/housetwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House4</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House5</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTwo.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House6</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="recommendation__content-apartman apartman" id="apartman">
+                        <!-- slide-1 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House1</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user3.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-2 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House2</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user3.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-3 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House3</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user3.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-4 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House4</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-5 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House5</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slide-6 -->
+                        <div>
+                            <div class="slide">
+                                <div class="slide__img">
+                                    <img src="img/Recommendaion/houseTree.png" alt="">
+                                </div>
+                                <div class="slide__subtitle">
+                                    <h2>Roselands House6</h2>
+                                    <p>$ 35.000.000</p>
+                                </div>
+                                <div class="slide__user">
+                                    <img src="img/userIcon/user1.svg" alt="">
+                                    <div class="slide__user-inf">
+                                        <h2>Dianne Russell</h2>
+                                        <p>Manchester, Kentucky</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-two-recommendation-end -->
+    
+    <!-- section-tree-sell -->
+    <section class="container">
+        <!-- sell-slider -->
+        <div class="sell">
+            <!-- slide-1 -->
+            <div>
+                <div class="sell-slide">
+                    <div class="sell__inf">
+                        <p><span></span>Ready to Sell!</p>
+                        <div class="sell__inf-content">
+                            <h2>Let’s tour and see our house!</h2>
+                            <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                            <div class="detail">
+                                <p>House Detail</p>
+                                <div class="detail__block">
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBed.svg" alt="">
+                                        <p>4 Bedroomscolor</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBath.svg" alt="">
+                                        <p>2 Bathrooms</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorCar.svg" alt="">
+                                        <p>1 Carport</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorFloor.svg" alt="">
+                                        <p>2 Floors</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="user">
+                                <img src="img/userIcon/user1.svg" alt="">
+                                <div class="user__contact">
+                                    <h2>Dianne Russell</h2>
+                                    <p>Manager Director</p>
+                                </div>
+                                <button>
+                                    <img src="img/Sell/vectorPhone.svg" alt="">
+                                    <a href="#">Contact Now</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sell__img">
+                        <img src="img/Sell/test.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- slide-2 -->
+            <div>
+                <div class="sell-slide">
+                    <div class="sell__inf">
+                        <p><span></span>Ready to Sell!</p>
+                        <div class="sell__inf-content">
+                            <h2>Let’s tour and see our house!</h2>
+                            <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                            <div class="detail">
+                                <p>House Detail</p>
+                                <div class="detail__block">
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBed.svg" alt="">
+                                        <p>4 Bedroomscolor</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBath.svg" alt="">
+                                        <p>2 Bathrooms</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorCar.svg" alt="">
+                                        <p>1 Carport</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorFloor.svg" alt="">
+                                        <p>2 Floors</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="user">
+                                <img src="img/userIcon/user1.svg" alt="">
+                                <div class="user__contact">
+                                    <h2>Dianne Russell</h2>
+                                    <p>Manager Director</p>
+                                </div>
+                                <button>
+                                    <img src="img/Sell/vectorPhone.svg" alt="">
+                                    <a href="#">Contact Now</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sell__img">
+                        <img src="img/Sell/test.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- slide-3 -->
+            <div>
+                <div class="sell-slide">
+                    <div class="sell__inf">
+                        <p><span></span>Ready to Sell!</p>
+                        <div class="sell__inf-content">
+                            <h2>Let’s tour and see our house!</h2>
+                            <p>Houses recommended by our partners that have been curated to become the home of your dreams!</p>
+                            <div class="detail">
+                                <p>House Detail</p>
+                                <div class="detail__block">
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBed.svg" alt="">
+                                        <p>4 Bedroomscolor</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorBath.svg" alt="">
+                                        <p>2 Bathrooms</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorCar.svg" alt="">
+                                        <p>1 Carport</p>
+                                    </div>
+        
+                                    <div class="detail__block-inf">
+                                        <img src="img/Sell/vectorFloor.svg" alt="">
+                                        <p>2 Floors</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="user">
+                                <img src="img/userIcon/user1.svg" alt="">
+                                <div class="user__contact">
+                                    <h2>Dianne Russell</h2>
+                                    <p>Manager Director</p>
+                                </div>
+                                <button>
+                                    <img src="img/Sell/vectorPhone.svg" alt="">
+                                    <a href="#">Contact Now</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sell__img">
+                        <img src="img/Sell/test.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section-tree-sell-end -->
+
+    <!-- section-four-review -->
+    <section class="review">
+        <div class="container">
+            <div class="review__title">       
+                <p><span></span>See Our Review</p>
+                <h2>What Our User Say About Us</h2>
+            </div>
+            
+            <div class="review__slider">
+                <!-- slide-1 -->
+                <div class="review__slider-slide">
+                    <div class="slide__img">
+                        <img src="img/Review/slide1.svg" alt="">
+                    </div>
+                    <div class="slide__review">
+                        <h2 style="padding-bottom: 16px;">Best! I got the house I wanted through Hounter</h2>
+                        <p style="padding-bottom: 24px;">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <div class="slide__review-info">
+                            <div class="info__img">
+                                <img src="img/userIcon/user2.svg" alt="">
+                            </div>
+                            
+                            <div class="info__person">
+                                <h2 style="padding-bottom: 4px;">Dianne Russell</h2>
+                                <p>Manager Director</p>
+                            </div>
+                            <div class="info__stars">
+                               <img src="img/Review/star.svg" alt="">
+                               <p>4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide-2 -->
+                <div class="review__slider-slide">
+                    <div class="slide__img">
+                        <img src="img/Review/slide2.svg" alt="">
+                    </div>
+                    <div class="slide__review">
+                        <h2 style="padding-bottom: 16px;">Best! I got the house I wanted through Hounter</h2>
+                        <p style="padding-bottom: 24px;">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <div class="slide__review-info">
+                            <div class="info__img">
+                                <img src="img/userIcon/user1.svg" alt="">
+                            </div>
+                            
+                            <div class="info__person">
+                                <h2 style="padding-bottom: 4px;">Dianne Russell</h2>
+                                <p>Manager Director</p>
+                            </div>
+                            <div class="info__stars">
+                               <img src="img/Review/star.svg" alt="">
+                               <p>4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- slide-3 -->
+                <div class="review__slider-slide">
+                    <div class="slide__img">
+                        <img src="img/Review/slide3.svg" alt="">
+                    </div>
+                    <div class="slide__review">
+                        <h2 style="padding-bottom: 16px;">Best! I got the house I wanted through Hounter</h2>
+                        <p style="padding-bottom: 24px;">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                        <div class="slide__review-info">
+                            <div class="info__img">
+                                <img src="img/userIcon/user5.svg" alt="">
+                            </div>
+                            
+                            <div class="info__person">
+                                <h2 style="padding-bottom: 4px;">Dianne Russell</h2>
+                                <p>Manager Director</p>
+                            </div>
+                            <div class="info__stars">
+                               <img src="img/Review/star.svg" alt="">
+                               <p>4.6</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <!-- section-four-review-end -->
+
+    <!-- section-five-partnership -->
+    <section class="container">
+        <div class="partnership">
+            <div class="partnership__title">       
+                <p><span></span>See tips and trick from our partnership</p>
+                <h2>Find out more about <br> Selling and buying homes</h2>
+                <button><a href="#">More Artikle</a></button>
+            </div>
+
+            <div class="partnership__content">
+                    <div class="container__one">
+                        <div class="partnership__content-homes">
+                            <div class="homes__inf">
+                                <div class="homes__inf-img">
+                                    <img src="img/Partnership/homeOne.svg" alt="">
+                                </div>
+                                <div class="homes__inf-contact">
+                                    <div class="contact__name">
+                                        <img src="img/userIcon/user1.svg" alt="">
+                                        <h2>Dianne Russell</h2>
+                                    </div>
+                                    <p>"The things we need to check when we want to buy a house"</p>
+                                    <div class="contact__visit">
+                                        <img src="img/Partnership/vectorTime.svg" alt="">
+                                        <p>4 min read | 25 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partnership__content-homes">
+                            <div class="homes__inf">
+                                <div class="homes__inf-img">
+                                    <img src="img/Partnership/homeTwo.svg" alt="">
+                                </div>
+                                <div class="homes__inf-contact">
+                                    <div class="contact__name">
+                                        <img src="img/userIcon/user5.svg" alt="">
+                                        <h2>Courtney Henry</h2>
+                                    </div>
+                                    <p>"7 Ways to distinguish the quality of the house we want to buy"</p>
+                                    <div class="contact__visit">
+                                        <img src="img/Partnership/vectorTime.svg" alt="">
+                                        <p>6 min read | 24 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partnership__content-homes">
+                            <div class="homes__inf">
+                                <div class="homes__inf-img">
+                                    <img src="img/Partnership/homeTree.svg" alt="">
+                                </div>
+                                <div class="homes__inf-contact">
+                                    <div class="contact__name">
+                                        <img src="img/userIcon/user6.svg" alt="">
+                                        <h2>Darlene Robertson</h2>
+                                    </div>
+                                    <p>"The best way to know the quality of the house we want to buy"</p>
+                                    <div class="contact__visit">
+                                        <img src="img/Partnership/vectorTime.svg" alt="">
+                                        <p>2 min read | 24 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="container__two">
+                        <div class="partnership__content-homes">
+                            <div class="homes__inf">
+                                <div class="homes__inf-img">
+                                    <img src="img/Partnership/homeFour.svg" alt="" id="img">
+                                </div>
+                                <div class="homes__inf-contact">
+                                    <div class="contact__name">
+                                        <img src="img/userIcon/user7.svg" alt="">
+                                        <h2>Cameron Williamson</h2>
+                                    </div>
+                                    <h2>12 Things to know before buying a house</h2>
+                                    <p>Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</p>
+                                    <div class="contact__visit">
+                                        <img src="img/Partnership/vectorTime.svg" alt="">
+                                        <p>8 min read | 25 Apr 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section-five-partnership-end -->
+
+    <!-- section-six-subscribe -->
+    <section class="container">
+        <div class="subscribe">
+            <h2>Subscribe For More Info and update from Hounter</h2>
+            <div class="search">
+                <form action="#">
+                <img src="img/Subscribe/vectorEmail.svg" alt="#">
+                  <input type="email" placeholder="Your email here" name="search" required>
+                  <button type="submit" class="btb-hover">Subsribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- section-six-subscribe-end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer container">
+            <div class="footer__bio">
+                <img src="img/logo.svg" alt="#">
+                <p>We provide information about properties such as houses, villas and apartments to help people find their dream home</p>
+                <div class="footer__bio-link">
+                    <a href="#"><img src="img/Footer/vectorFacebook.svg" alt="#" href=""></a>
+                    <a href="#"><img src="img/Footer/vectorTwitter.svg" alt="#"></a>
+                    <a href="#"><img src="img/Footer/vectorInstagram.svg" alt="#"></a>
+                </div>
+            </div>
+
+           <div class="footer__nav">
+            <div class="footer__nav-propery">
+                <ul>
+                    <li>Property</li>
+                    <li><a href="#">House</a></li>
+                    <li><a href="#">Apartment</a></li>
+                    <li><a href="#">Villa</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav-article">
+                <ul>
+                    <li>Article</li>
+                    <li><a href="#">New Article</a></li>
+                    <li><a href="#">Popular Article</a></li>
+                    <li><a href="#">Most Read</a></li>
+                    <li><a href="#">Tips & Tricks</a></li>
+                </ul>
+            </div>
+            <div class="footer__nav-contact">
+                <ul>
+                    <li>Contact</li>
+                    <li><a href="https://www.google.com/maps/search/2464+Royal+Ln.+Mesa,+New+Jersey+45463/@40.0584698,-74.5704705,11z/data=!3m1!4b1" target="_blank" rel="noopener noreferrer">2464 Royal Ln. Mesa, New Jersey 45463</a></li>
+                    <li><a href="tel:+380441234567">(671) 555-0110</a></li>
+                    <li><a href="mailto:info@hounter.com">info@hounter.com</a></li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </footer>
+    <!-- footer-end -->
+
+    <!-- script -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+</html>
